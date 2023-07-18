@@ -49,6 +49,7 @@ void main() {
         // wait for the app to rebuild
         await tester.pumpAndSettle();
 
+        // ignore: lines_longer_than_80_chars
         final newColor = tester.widget<Container>(find.byKey(containerKey)).color;
         expect(newColor, isA<Color>());
 
